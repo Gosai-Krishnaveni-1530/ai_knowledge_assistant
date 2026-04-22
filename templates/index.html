@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Knowledge Assistant</title>
+</head>
+<body>
+
+    <h1>{{ message }}</h1>
+
+    <!-- Upload PDF -->
+    <h3>Upload PDF</h3>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" required>
+        <button type="submit">Upload</button>
+    </form>
+
+    <br><br>
+
+    <!-- Ask Question -->
+    <h3>Ask Question</h3>
+    <form action="/query" method="post">
+        <input type="text" name="question" placeholder="Ask a question" required>
+        <button type="submit">Ask</button>
+    </form>
+
+</body>
+</html>
