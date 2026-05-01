@@ -1,6 +1,5 @@
 # AI Knowledge Assistant
 
-<<<<<<< HEAD
 An AI-powered Knowledge Assistant that uses **Retrieval-Augmented Generation (RAG)** to answer questions from custom documents with accurate, contextual, and intelligent responses.
 
 ## Features
