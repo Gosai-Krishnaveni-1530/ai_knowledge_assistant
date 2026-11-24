@@ -1,10 +1,7 @@
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_community.vectorstores import Chroma
 from services.llm_service import generate_answer
-
-# ✅ THIS FUNCTION (required for upload)
 def create_vector_store(chunks):
-
     embeddings = HuggingFaceEmbeddings(
         model_name="sentence-transformers/all-MiniLM-L6-v2"
     )
@@ -16,9 +13,6 @@ def create_vector_store(chunks):
     )
 
     db.persist()
-
-
-# ✅ THIS FUNCTION (required for query)
 def search_documents(question):
 
     embeddings = HuggingFaceEmbeddings(
